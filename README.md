@@ -24,9 +24,18 @@ provide notifications for upcoming performance and objective assessments.
 - Add alerts for upcoming or due dates for courses, assessments
 - Add Notes for a specific course
 
-## Wireframe
-- PNG preview:  
-  ![Wireframe](AcademicsTrackerMauiNew/Docs/wireframe.png)
+<br>
+
+## Wireframe 
+![Wireframe](AcademicsTrackerMauiNew/Docs/wireframe.png)
+
+<br>
+
+## Screenshots
+| Home Screen                                                 | Term Details                                                 | Course Details                                                 |
+|-------------------------------------------------------------|--------------------------------------------------------------|----------------------------------------------------------------|
+| ![HomeScreen](AcademicsTrackerMauiNew/Docs/screenshot1.png) | ![TermDetails](AcademicsTrackerMauiNew/Docs/screenshot2.png) | ![CourseDetails](AcademicsTrackerMauiNew/Docs/screenshot3.png) |
+
 
 ### Author
 Tonyruizo
