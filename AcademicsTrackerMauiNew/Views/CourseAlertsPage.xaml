@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AcademicsTrackerMauiNew.Views.CourseAlertPage"
+             Title="Course Alerts">
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="12">
+            <Label x:Name="CourseTitleLabel" FontSize="20"   Padding="0,0,0,10" />
+
+            <Grid ColumnDefinitions="*,Auto" RowDefinitions="*,Auto,Auto" BackgroundColor="#f2e9fd" Padding="12" Margin="0,0,0,8">
+                <Label Grid.Row="0" Text="Start Date" FontAttributes="Bold" />
+                <DatePicker Grid.Row="1" Grid.Column="0" x:Name="StartDatePicker" />
+                <Label Grid.Row="2" Grid.ColumnSpan="2" Text="Notification On/Off" Padding="0,5,0,0" HorizontalOptions="Start" />
+                <CheckBox Grid.Row="2" Grid.Column="1" x:Name="NotifyStartCheck" />
+            </Grid>
+
+
+            
+            <Grid ColumnDefinitions="*,Auto" RowDefinitions="*,Auto,Auto" BackgroundColor="#f2e9fd" Padding="12" Margin="0,0,0,8">
+                <Label Grid.Row="0"  Text="End Date" FontAttributes="Bold" />
+                <DatePicker Grid.Row="1" Grid.Column="0" x:Name="EndDatePicker" />
+                <Label Grid.Row="2" Grid.Column="0" Text="Notification On/Off" Padding="0,5,0,0" HorizontalOptions="Start" />
+                <CheckBox Grid.Row="2" Grid.Column="1" x:Name="NotifyEndCheck" />
+            </Grid>
+
+            <Button Text="Save" Clicked="OnSaveClicked" Margin="0,20,0,0"/>
+            <Button Text="Cancel" Clicked="OnCancelClicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

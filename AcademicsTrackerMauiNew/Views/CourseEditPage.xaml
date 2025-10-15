@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AcademicsTrackerMauiNew.Views.CourseEditPage"
+             Title="Add / Edit Course">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="10">
+            <Entry x:Name="TitleEntry" Placeholder="Course Title" />
+            <Label>Start Date:</Label>
+            <DatePicker x:Name="StartDatePicker" />
+            <Label>Anticipated End Date:</Label>
+            <DatePicker x:Name="EndDatePicker" />
+            <Label>Status:</Label>
+            <Picker x:Name="StatusPicker" Title="Select Status" />
+            <Entry x:Name="InstructorNameEntry" Placeholder="Instructor Name" />
+            <Entry x:Name="InstructorPhoneEntry" Placeholder="Phone" Keyboard="Telephone" />
+            <Entry x:Name="InstructorEmailEntry" Placeholder="Email" Keyboard="Email" />
+            <Button Text="Save" Clicked="OnSaveClicked" />
+            <Button Text="Cancel" Clicked="OnCancelClicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

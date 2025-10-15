@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="AcademicsTrackerMauiNew.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:AcademicsTrackerMauiNew.Views"
+    Shell.FlyoutBehavior="Disabled"
+    Title="AcademicsTrackerMauiNew">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:HomePage}"
+        Route="homepage" />
+
+    <ShellContent
+        Title="Term Detail"
+        ContentTemplate="{DataTemplate local:TermDetailPage}"
+        Route="termdetail" />
+
+    <ShellContent
+        Title="Course Detail"
+        ContentTemplate="{DataTemplate local:CourseDetailPage}"
+        Route="coursedetail" />
+
+    <ShellContent
+        Title="Term Edit"
+        ContentTemplate="{DataTemplate local:TermEditPage}"
+        Route="termedit" />
+
+    <ShellContent
+        Title="Course Edit"
+        ContentTemplate="{DataTemplate local:CourseEditPage}"
+        Route="courseedit" />
+
+    <ShellContent
+        Title="Assessment Edit"
+        ContentTemplate="{DataTemplate local:AssessmentEditPage}"
+        Route="assessmentedit" />
+
+    <ShellContent
+        Title="Notes"
+        ContentTemplate="{DataTemplate local:NotesPage}"
+        Route="notes" />
+
+    <ShellContent
+        Title="Course Alerts"
+        ContentTemplate="{DataTemplate local:CourseAlertPage}"
+        Route="coursealert" />
+
+    <ShellContent
+        Title="Assessment Alerts"
+        ContentTemplate="{DataTemplate local:AssessmentAlertsPage}"
+        Route="assessmentalerts" />
+
+</Shell>

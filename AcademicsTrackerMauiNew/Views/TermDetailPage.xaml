@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AcademicsTrackerMauiNew.Views.TermDetailPage"
+             xmlns:m="clr-namespace:AcademicsTrackerMauiNew.Models"
+             Title="Term Details">
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="12">
+            <Label x:Name="TermTitleLabel" FontSize="20"/>
+            <Label x:Name="TermDatesLabel" FontSize="16"/>
+            <Label x:Name="CourseCountLabel" 
+                       Text="Courses: 0/6"
+                       FontSize="14" 
+                       TextColor="Gray" Margin="0, 0, 0, 10" />
+            <CollectionView x:Name="CoursesView" >
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="m:Course">
+                        <Grid Padding="12"
+                          ColumnDefinitions="2*,2*,auto,auto"
+                          RowDefinitions="*,Auto,Auto,Auto"
+                          BackgroundColor="#f2e9fd"
+                          Margin="0,0,0,8">
+                            <!-- Course Title -->
+                            <Label Grid.Row="0" Grid.ColumnSpan="4"
+                                    Text="{Binding Title}"
+                                    FontAttributes="Bold" />
+
+                            <!-- Course Dates -->
+                            <Label Grid.Row="1" Grid.Column="0" Padding="0, 10, 0, 10"
+                                    Text="{Binding StartDate, StringFormat='Start: {0:d}'}" />
+                            <Label Grid.Row="1" Grid.Column="1" Padding="0, 10, 0, 10"
+                                    Text="{Binding EndDate, StringFormat='End: {0:d}'}" />
+                            <!-- Course Status -->
+                            <Label Grid.Row="2" Grid.Column="0" Padding="0, 0, 0, 10"
+                                    Text="{Binding Status, StringFormat='Status: {0}'}" />
+
+                            <!-- Course Buttons -->
+                            <Button Grid.Row="3" Grid.Column="0" Margin="0, 0, 10, 0"
+                                    Text="Edit" Clicked="OnEdit" />
+                            <Button Grid.Row="3" Grid.Column="1" Margin="0, 0, 10, 0"
+                                    Text="View" Clicked="OnView" />
+                            <Button Grid.Row="3" Grid.Column="3"
+                                    Text="Delete" Clicked="OnDelete" />
+
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <Button x:Name="AddCourseButton" Text="Add Course" Clicked="OnAddCourseClicked" Margin="0, 20, 0, 0" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AcademicsTrackerMauiNew.Views.AssessmentEditPage"
+             Title="Add / Edit Assessment">
+    <VerticalStackLayout Padding="20" Spacing="10">
+        <Picker x:Name="TypePicker" Title="Assessment Type" />
+        <Entry x:Name="TitleEntry" Placeholder="Assessment Title" />
+        <Label>Start Date:</Label>
+        <DatePicker x:Name="StartDatePicker" />
+        <Label>Due Date:</Label>
+        <DatePicker x:Name="EndDatePicker" />
+
+        <Button Text="Save" Clicked="OnSaveClicked" Margin="0,20,0,0" />
+        <Button Text="Cancel" Clicked="OnCancelClicked" />
+    </VerticalStackLayout>
+</ContentPage>
