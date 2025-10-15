@@ -34,7 +34,7 @@ provide notifications for upcoming performance and objective assessments.
 ## Screenshots
 | Home Screen                                                 | Term Details                                                 | Course Details                                                 |
 |-------------------------------------------------------------|--------------------------------------------------------------|----------------------------------------------------------------|
-| ![HomeScreen](AcademicsTrackerMauiNew/Docs/screenshot1.png) | ![TermDetails](AcademicsTrackerMauiNew/Docs/screenshot2.png) | ![CourseDetails](AcademicsTrackerMauiNew/Docs/screenshot3.png) |
+| ![HomeScreen](AcademicsTrackerMauiNew/Docs/Screenshot1.png) | ![TermDetails](AcademicsTrackerMauiNew/Docs/screenshot2.png) | ![CourseDetails](AcademicsTrackerMauiNew/Docs/screenshot3.png) |
 
 
 ### Author
