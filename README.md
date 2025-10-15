@@ -11,7 +11,8 @@ provide notifications for upcoming performance and objective assessments.
 
 #### Technologies Used:
 - **C#**, **MAUI (.NET 8.0)**, and **sqlite-net**.
-  <br>
+
+<br>
 
 ## Features
 - XAML
