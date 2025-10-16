@@ -11,7 +11,7 @@ It should provide detailed views of courses for each term,
 provide notifications for upcoming performance and objective assessments.
 
 #### Additional Note:
-1. This application was using **Visual Studio 2022** on a **Windows 11 (Virtual Machine)** via **Parallels Desktop** on a **Macbook**. (Tested on Macbook's Rider IDE.)
+1. This application was built using **Visual Studio 2022** on a **Windows 11 (Virtual Machine)** via **Parallels Desktop** on a **Macbook**. (Tested on Macbook's Rider IDE.)
 
 #### Technologies Used:
 - **C#**, **MAUI (.NET 8.0)**, and **sqlite-net**.
